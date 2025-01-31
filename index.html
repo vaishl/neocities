@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>robotgrrl portfolio!</title>
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" href="https://i.pinimg.com/736x/29/9d/b8/299db8334092080501e8ccf5f7f56a16.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://i.pinimg.com/474x/5b/49/19/5b491937ee86d6ea2d79619e6bd3e2a8.jpg">
+
     <style>
       body {
-        background-image: url('/porpol.png');
+        background-image: url('./porpol.png');
         background-size: cover; 
         background-repeat: no-repeat; 
         background-position: center;
-        background-size: cover;
         background-attachment: fixed;
-        font-family: Arial, sans-serif;
+        font-family: "Chakra Petch", sans-serif;
         color: #680acc;
+        padding-left: 10px;
       }
       
       h1, h2, p {
@@ -29,7 +34,13 @@
         width: 60%;
         margin: 20px auto;
         box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-        border: 2px solid #FFB6C1; 
+        border: 2px solid #ed8ebe; 
+        text-align: left; 
+      }
+
+      .content-box img {
+        display: block;
+        margin: 0 auto;
       }
 
       a {
@@ -41,38 +52,192 @@
       a:hover {
         text-decoration: underline;
       }
+
       
-      .content-box {
-        padding: 20px;
-        border-radius: 15px;
-        width: 60%;
-        margin: 20px auto; 
-        border: 2px solid #FFB6C1;
-        text-align: center; 
+      .sidenav {
+        position: fixed;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(228, 209, 255, 0.9);
+        padding: 15px;
+        border-radius: 20px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        z-index: 1000;
+        border: 2px solid #ed8ebe;
       }
 
-      .content-box img {
-        display: block;
-        margin: 0 auto;
+      .sidenav a {
+        text-decoration: none;
+        font-weight: bold;
+        font-family: "Chakra Petch", sans-serif;
+        color: #680acc;
+        padding: 10px 20px;
+        border-radius: 15px;
+        background: #ed8ebe;
+        transition: 0.3s ease-in-out;
+        text-align: center;
       }
+
+      .sidenav a:hover {
+        background: #ff69b4;
+        color: white;
+        box-shadow: 0px 0px 10px #ff69b4;
+      }
+
+      
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .girlbox {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .hit-counter-box {
+        position: fixed;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        background: #e4d1ff;
+        padding: 15px;
+        border-radius: 15px;
+        width: 180px;
+        text-align: center;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+        border: 2px solid #ed8ebe;
+    }
+
+    .hit-counter-box h3 {
+        margin: 0;
+        font-size: 16px;
+        color: #680acc;
+  }
+
+    .hit-counter-box img {
+        margin-top: 2px;
+        width: 100px;
+    }
     </style>
   </head>
+
   <body>
-    <h1>Thanks for viewing my website!! ( ´ ▿ ` )</h1>
+
     
-
+    <div class="sidenav">
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="https://github.com/vaishl">Github</a>
+    </div>
+    
     <div class="content-box">
-  <img src="Hi.gif" alt="A waving GIF" width="300">
-  <h2>about me ^_^</h2>
-  <p> hi, i'm vish! i'm a 21 y/o msc computer science student from the uk. i love programming, gaming, anime and storytelling... but for this website i'll be focussing on the programming side of things.!! you can find my github <a href="https://github.com/vaishl">here</a>.</p>
-  <p> this website is a sort of portfolio of mine. here i'll be focussing on my journey to becoming a better programmer and building new projects!</p>
-  <p>(´･ᴗ･ ` )</p>
-  
-  <p>I'm an aspiring game developer, I'm interested in creating all sorts of games! But I'm most used to creating for PC. I created part of an RPG open world game as a project last year- "Silent Blades". <a href="https://docs.google.com/document/d/1ztahKXaRENgN1rqoS3equ-ZVYCPgGRMfu9Zn9zo0KW0/edit?usp=sharing">Silent Blades Interrim report!</a>
-  
-  <p>This report was written about halfway through the project, detailing what I would include and what the plan for the project was. If you're interested, you can read the full dissertation <a href="https://docs.google.com/document/d/1IUkRFkAt-nw4CweEawzIvS2UC37MocIdrh3qSLy3sGo/edit?usp=sharing">here!</a> </p>
-  
-</div>
+      <h1>Welcome to my Portfolio! ( ´ ▿ ` )</h1>
+    </div>
 
+
+    <div id="about" class="content-box">
+      <h1>About me ^_^</h1>
+      <img src="Hi.gif" alt="A waving GIF" width="300">
+      <p> Hi, I'm Vish! I'm a 21 y/o MSc Computer Science student from the UK. </p>
+      
+      <ul>
+        <li>I love programming, gaming, anime, and storytelling...</li>
+        <li>On this website, I'll be documenting my journey in programming and project-building!</li>
+        <li>I'm proficient in:
+          <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C#</li>
+          </ul>
+        </li>
+        <li>I'm an aspiring game developer! I mostly work with Unity for PC games.</li>
+        <li>I'm currently doing an NVIDIA Machine Learning course!</li>
+      </ul>
+      <p>(´･ᴗ･ ` )</p>
+    </div>
+
+    <div id="projects" class="content-box">
+      <h1>Projects!</h1>
+      <img src="girlietyping.gif" alt="she typingg" width="200">
+      
+      <h4>Completed/Past Projects</h4>
+      <ul>
+        <li><b>Silent Blades</b> - Undergraduate Dissertation Project</li>
+        <ul>
+          <li>Created the first arc/tutorial of a 3D RPG open-world game.</li>
+          <li>Read my <a href="https://docs.google.com/document/d/1ztahKXaRENgN1rqoS3equ-ZVYCPgGRMfu9Zn9zo0KW0/edit?usp=sharing">Interim Report</a>.</li>
+          <li>Check out my full dissertation <a href="https://docs.google.com/document/d/1IUkRFkAt-nw4CweEawzIvS2UC37MocIdrh3qSLy3sGo/edit?usp=sharing">here</a>.</li>
+        </ul>
+        <li><b>Cozy Farm</b> - 2D Unity Pixel Game</li>
+      </ul>
+
+      <h4>Current Projects</h4>
+      <ul>
+        <li>Valorant Discord Bot</li>
+        <li>Visual Novel Game for Steam (Passion Project)</li>
+        <li>2D Platformer with Unity</li>
+      </ul>
+    </div>
+
+    <div id="contact" class="content-box">
+        <h1>Contact Me!</h1>
+        <p>You can reach me via <a href="mailto:vaishlod@gmail.com">Email</a> or through my <a href="https://github.com/vaishl">Github</a>.</p>
+      </div>
+  
+  
+    <div class="girlbox">
+      <a href="https://lovesick.cafe/grrrl">
+        <img src="madebya-purple.png" alt="girlicon" style="width:50px;height:50px;">
+      </a>
+    </div>
+
+    <div class="hit-counter-box">
+        <h3>Visitor Count</h3>
+        <div class="counter-image">
+            You are visitor #<span id="hitcount"></span>
+<script>
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var site_data = JSON.parse(this.responseText);
+      var num_arr = site_data.info.views.toString().split("");
+      var num_str = "";
+      for (i = 0; i < num_arr.length; i++) {
+        num_str += num_arr[i];
+        if ( (num_arr.length-1 - i) % 3 == 0 && (num_arr.length-1 - i) != 0 ) {num_str += ",";}
+      }
+      document.getElementById("hitcount").innerHTML = num_str;
+    }
+  };
+  xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=robotgrrl", true);
+  xhttp.send();
+</script>
+        </div>
+        Last Updated: <span id="lastupdate"></span>
+
+<script>
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var site_data = JSON.parse(this.responseText);
+      var date_str = site_data.info.last_updated;
+        var date_obj = new Date(site_data.info.last_updated);
+        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    document.getElementById("lastupdate").innerHTML = days[date_obj.getDay()] + " " + months[date_obj.getMonth()] + "  " + date_obj.getDate() + ",  " + date_obj.getFullYear();
+
+    }
+  };
+  xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=robotgrrl", true);
+  xhttp.send();
+</script>
+      </div>
+
+      
   </body>
 </html>
