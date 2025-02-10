@@ -154,6 +154,42 @@
         margin-top: 2px;
         width: 100px;
       }
+
+      .scroll-top {
+        position: fixed;
+        top: 90%;
+        right: 20px;
+        transform: translateY(-50%);
+        background: #e4d1ff;
+        padding: 15px;
+        border-radius: 15px;
+        width: 180px;
+        text-align: center;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+        border: 2px solid #ed8ebe;
+        opacity: 0.65;
+      }
+      .scroll-top button {
+        text-decoration: none;
+        font-weight: bold;
+        font-family: "Chakra Petch", sans-serif;
+        color: #680acc;
+        padding: 10px 20px;
+        border-radius: 15px;
+        background: #ed8ebe;
+        transition: 0.3s ease-in-out;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+      }
+
+      .scroll-top button:hover {
+        background: #ff69b4;
+        color: white;
+        box-shadow: 0px 0px 10px #ff69b4;
+      }
+
+      
     </style>
   </head>
 
@@ -161,10 +197,11 @@
 
     <!-- Side Navbar -->
     <div class="sidenav">
-      <a href="#about">About Me</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-      <a href="https://github.com/vaishl">Github</a>
+      <a href="#about">about me</a>
+      <a href="#projects">projects</a>
+      <a href="#contact">contact</a>
+      <a href="https://github.com/vaishl">github</a>
+      <a href="blog.html">blog</a>
     </div>
     
     <div class="heading-box">
@@ -227,8 +264,8 @@
             <li><b>Takeaway Menu System </b> - Agile Group Project (2025)</li>
             <ul>
               <li>Created a login system utilising text files as a makeshift database.</li>
-              <li>Read my <a href="https://docs.google.com/document/d/1ztahKXaRENgN1rqoS3equ-ZVYCPgGRMfu9Zn9zo0KW0/edit?usp=sharing">Interim Report</a>.</li>
-              <li>Check out my full dissertation <a href="https://docs.google.com/document/d/1IUkRFkAt-nw4CweEawzIvS2UC37MocIdrh3qSLy3sGo/edit?usp=sharing">here</a>.</li>
+              <li>Designed a menu system to display items, their type, and price</li>
+              <li>Added functionalities for adding eco-friendly cutlery, adding delivery address & choosing priority delivery.</li>
             </ul>
             <li><b>RefugeEAP website built with Java Spring and SQL</b> - SCRUM Group Project (2023)</li>
             <ul>
@@ -254,7 +291,11 @@
       <div class="flex-container">
         <img src="tumblr.gif" alt="phone gif">
         <div class="text-content">
-          <p>You can reach me via <a href="mailto:vaishlod@gmail.com">Email</a> or through my <a href="https://github.com/vaishl">Github</a>.</p>
+          <ul>
+            <li>You can reach me via <a href="mailto:vaishlod@gmail.com">Email</a> </li>
+            <li>Alternatively, through my <a href="https://github.com/vaishl">Github</a>.</li>
+            <li>also through my <a href="https://www.linkedin.com/in/vaishlod22/">Linkedin!</a>. </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -303,5 +344,8 @@
         xhttp.send();
       </script>
     </div>
+    <div class="scroll-top">
+      <a href="#">Go to top!</a>
+  </div>  
   </body>
 </html>
